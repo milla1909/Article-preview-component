@@ -1,0 +1,268 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:hsl(210, 46%, 95%);
+    padding:1vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    font-family:'Manrope', sans-serif;
+
+}
+/* Mobile first design */
+main{
+    background-color:#fff;
+    box-shadow: 1px;
+    border-radius:10px;
+    overflow:hidden;
+    width:min(90%,25rem);
+}
+
+/* Upper part with the picture of the drawer */
+.image{
+   background-image: url(images/drawers.jpg);
+   height:40vh;
+   min-height:16rem;
+   background-repeat: no-repeat;
+   background-position:center;
+   background-size:cover;
+   
+}
+
+/* Lower part with text and social media links */
+
+h3{
+    font-weight:700;
+    font-size:2.5vh;
+    color: hsl(217, 19%, 35%);
+    padding:2rem 1.5rem 0 1.5rem;
+}
+.text>p{
+    color: hsl(217, 19%, 35%);
+    font-weight:500;
+    line-height:1.5;
+    font-size:2.2vh;
+    padding:1rem 1.5rem 1rem 1.5rem;
+  
+}
+
+/* Bottom part with autor image*/
+
+.autor{
+    padding-top:1rem;
+    padding-right:1rem;
+    padding-bottom:1rem;
+    display:flex;
+    align-items:center;  
+    position:relative;
+
+    }
+.autor-name{
+    width:10rem;
+    }
+.autor-name>p{
+    font-size:2vh;
+    margin-left:20px;
+    }
+.bold{
+    font-weight:700;
+}  
+/* avatar image */
+.avatar{
+    margin-top:auto;
+    margin-bottom:auto;
+    border-radius:50%;
+    height:7vh;
+    }
+
+.circle{
+    border-radius:50%;
+    background-color:hsl(210, 46%, 95%);
+    height:30px;
+    width:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:auto;
+    margin-top:-0.5rem;
+    z-index:2000;
+    cursor:pointer;
+
+}
+/* active state */
+
+
+.social-media{
+    position:absolute;
+    top:0;
+    background-color:hsl(217, 19%, 35%);
+    height:100%;
+    width:100%;
+    display:flex;
+    gap:1.2rem;
+    align-items:center;
+    padding:1rem 1.5rem 1rem 1.5rem;
+    opacity:1;
+    transition:opacity 200ms ease-in;
+}
+.visibility{
+    opacity:0;
+}
+
+
+.social-media>p{
+    color:hsl(212, 23%, 69%);
+    font-weight:700;
+    letter-spacing:6px;
+    font-size:2vh;
+    }
+
+.social-media>a{
+    display:flex;
+    align-items:center;
+}
+
+.circle--active{
+    background-color:hsl(212, 23%, 69%);
+}
+.white-arrow path{
+    fill:white;
+}
+
+
+
+
+
+/* Desktop design */
+@media (min-width:45em){
+    body{
+        position:relative;
+    }
+    main{
+       display:flex;
+       width:50vw;
+       height:min(42vh,30rem);
+    }
+    /* Left part of the card */
+    .image{
+        background-image: url(images/drawers.jpg);
+        background-repeat:no-repeat;
+        background-position-y: 0;
+        background-size:140%;
+        /* background-size:max(40vh,16rem); */
+        /* height:100%; */
+        width:40%;
+     }
+     
+    /* Lower part with text and social media links */
+    .text{
+        padding:1.5rem;
+        width:60%;    }
+    .text>p{
+        padding:0;
+        margin:0;
+        color: hsl(217, 19%, 35%);
+        font-weight:500;
+        line-height:1.5;
+        font-size:min(1.8vh,15px);
+    }
+    h3{
+        padding:0;
+        margin:0;
+        font-weight:700;
+        font-size:min(2.8vh,20px);
+        color: hsl(217, 19%, 35%);
+        margin-bottom:10px;
+    }
+
+
+    /* Bottom part with autor image*/
+    .autor{
+        padding:0;
+        padding-top:0.5rem;
+        padding-right:1rem;
+        display:flex;
+        align-items:center;
+        margin-top:auto;
+        margin-bottom:auto; 
+        position:unset;
+        }
+    .autor-name{
+        width:15rem;
+        }
+    .autor-name>p{
+            font-size:min(1.5vh,15px);
+            margin-left:20px;
+            }
+    /* avatar image */
+    .avatar{
+        height:1.5rem;
+        }
+    .circle{
+            border-radius:50%;
+            background-color:hsl(210, 46%, 95%);
+            height:15px;
+            width:15px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin-left:auto;
+            margin-top:-0.5rem;
+            z-index:2000;
+        
+        }
+        #arrow{
+            height:8px;
+        }
+
+
+
+
+
+/* active state */
+
+
+.social-media {
+    position: absolute;
+    top:50%;
+    right:20vw;
+    background-color: hsl(217, 19%, 35%);
+    height:0rem;
+    width:20vw;
+    max-width:18rem;
+    display: flex;
+    align-items:center;
+    gap:0.5rem;
+    justify-content:center;
+    padding:0.8rem min(0.8rem,10px) 0.8rem min(0.8rem,10px);
+    border-radius:5px;
+}
+
+.social-media>p {
+    color: hsl(212, 23%, 69%);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size:min(1.5vh,13px);
+}
+
+.social-media>a {
+    display: flex;
+    align-items: center;
+}
+.social-media>a>img{
+    height:0.8rem;
+}
+
+.circle--active {
+    background-color: hsl(212, 23%, 69%);
+}
+
+.white-arrow path {
+    fill: white;
+}
+
+    }
