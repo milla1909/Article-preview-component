@@ -151,14 +151,13 @@ h3{
     .image{
         background-image: url(images/drawers.jpg);
         background-repeat:no-repeat;
-        background-position-y: 0;
-        background-size:140%;
-        /* background-size:max(40vh,16rem); */
-        /* height:100%; */
+        background-position-y: -10px;
+        background-size:150%;
+        height:min(42vh,30rem);
         width:40%;
      }
      
-    /* Lower part with text and social media links */
+     /* Right part */
     .text{
         padding:1.5rem;
         width:60%;    }
@@ -187,9 +186,8 @@ h3{
         padding-right:1rem;
         display:flex;
         align-items:center;
-        margin-top:auto;
-        margin-bottom:auto; 
-        position:unset;
+        height:30%;
+        margin-top:0.5rem;
         }
     .autor-name{
         width:15rem;
