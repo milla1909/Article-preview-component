@@ -188,6 +188,7 @@ h3{
         align-items:center;
         height:30%;
         margin-top:0.5rem;
+        position:unset;
         }
     .autor-name{
         width:15rem;
@@ -198,13 +199,13 @@ h3{
             }
     /* avatar image */
     .avatar{
-        height:2rem;
+        height:1.5rem;
         }
     .circle{
             border-radius:50%;
             background-color:hsl(210, 46%, 95%);
-            height:30px;
-            width:30px;
+            height:22px;
+            width:35px;
             display:flex;
             justify-content:center;
             align-items:center;
@@ -214,7 +215,7 @@ h3{
         
         }
         #arrow{
-            height:15px;
+            height:7px;
         }
 
 
